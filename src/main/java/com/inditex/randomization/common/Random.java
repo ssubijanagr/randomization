@@ -15,7 +15,6 @@ import java.lang.annotation.Target;
 @Target({FIELD, PARAMETER})
 @Retention(RUNTIME)
 @Documented
-@Deprecated(forRemoval = true)
 public @interface Random {
 
   /**

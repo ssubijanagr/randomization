@@ -32,8 +32,6 @@ public class RandomUtil {
       .set(COLLECTION_MIN_SIZE, 3).set(COLLECTION_MAX_SIZE, 5)
       .set(INTEGER_MIN, 0).set(INTEGER_MAX, Integer.MAX_VALUE);
 
-  private static final int STREAM_SIZE = 5;
-
   /**
    * Next object.
    *
@@ -50,17 +48,6 @@ public class RandomUtil {
         .supply(all(LocalDate.class),
             random -> LocalDate.ofEpochDay(random.longRange(LD_2021_02_01.toEpochDay(), LD_2022_01_31.toEpochDay())))
         .lenient().create();
-  }
-
-  /**
-   * Next objects.
-   *
-   * @param <T> the generic type
-   * @param type the type
-   * @return the list
-   */
-  public static <T> List<T> nextObjects(final Class<T> type) {
-    return nextObjects(type, STREAM_SIZE);
   }
 
   /**

@@ -5,9 +5,7 @@ import java.util.List;
 import com.inditex.randomization.common.MyRandomDTO;
 import com.inditex.randomization.common.Random;
 
-import org.instancio.junit.InstancioSource;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -46,15 +44,4 @@ public class InstancioTest {
     Assertions.assertFalse(randomDTOList.isEmpty());
   }
 
-  @ParameterizedTest
-  @MethodSource("com.inditex.randomization.common.ComposeItemsTestUtil#getRandomItems")
-  @InstancioSource
-  @Disabled
-  void shouldGenerateRandomItemsWIthInstancioSource(
-      final MyRandomDTO objectFromMethodSource,
-      final Boolean isValidFromMethodSource) {
-    // Assertions.assertNotNull(object);
-    // Assertions.assertNotNull(otherParam);
-    Assertions.assertEquals(objectFromMethodSource.isValid(), isValidFromMethodSource);
-  }
 }

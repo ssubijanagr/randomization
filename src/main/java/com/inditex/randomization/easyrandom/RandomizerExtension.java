@@ -111,7 +111,6 @@ import org.junit.platform.commons.logging.LoggerFactory;
  * @see CustomRandomFieldProvider
  * @see <a href="https://martinfowler.com/bliki/ObjectMother.html">ObjectMother pattern</a>
  */
-@Deprecated(forRemoval = true)
 public class RandomizerExtension implements ParameterResolver, TestInstancePostProcessor {
 
   private static final int DEFAULT_RANDOMIZATION_DEPTH = 4;
