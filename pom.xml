@@ -47,7 +47,7 @@
     <dependency>
       <groupId>org.instancio</groupId>
       <artifactId>instancio-junit</artifactId>
-      <version>LATEST</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.jeasy</groupId>

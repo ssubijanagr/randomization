@@ -12,7 +12,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 @ExtendWith(RandomizerExtension.class)
-public class EasyRandomTest {
+class EasyRandomTest {
 
   @Random
   private MyRandomDTO randomDTO;
